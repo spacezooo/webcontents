@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>도형 서식 폼 만들기</title>
+    <head>
+        <body>
+            <h3>도형서식입력</h3>
+            <hr>
+            <form>
+                선종류
+                <select size="3" name="china">
+                    <option value="1">선없음</option>
+                    <option value="2">실선</option>
+                    <option value="3">점선</option>
+                </select>
+                <br>
+
+                선두께
+                <input type="number" value="">
+                <br>
+
+                선색
+                <input type="color"value="#00BFFF"
+                onchange="document.body.style.color=this.value"
+                <br>
+
+                <div>
+                투명도:10&deg;
+                <input type="range" min="0" max="100" list="temperatures">100&deg;
+                <datalist id="temperatures">
+                    <option value="12" lable="Low">
+                    <option value="50" lable="Medium">
+                    <option value="88" lable="High">
+                </datalist>
+                </div>
+            </form>
+        </body>
+    </head>
+</html>

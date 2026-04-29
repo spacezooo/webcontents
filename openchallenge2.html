@@ -1,73 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>시맨틱 태그로 구조화 연습</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>About me</title>
+</head>
 <body>
-
-    <header>
-        <h1>볼프강 아마데우스 모차르트</h1>
-        <p>
-            모차르트(1756년 1월 27일~1791년 12월 5일)는 1756년 1월 27일 잘츠부르크에서 태어난 
-            천재적인 오스트리아의 작곡가를 소개한다.
-        </p>
-        <figure>
-            <img width="140" height="200" 
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wolfgang-amadeus-mozart_1.jpg/500px-Wolfgang-amadeus-mozart_1.jpg">
-             <figcaption>1770년대 초상화</figcaption>
-        </figure>
-    </header>
-
-    <nav>
-        <h2>목차</h2>
-        <ul>
-            <li><a href="#life">생애</a></li>
-            <li><a href="#death">죽음</a></li>
-            <li><a href="#music">음악</a></li>
-        </ul>
-    </nav>
-
     <section>
-        <article id="life">
-            <h2>생애</h2>
-            <p>
-                모차르트는 1756년 1월 27일 잘츠부르크에서 태어나서, 궁정 음악가였던 아버지에게 
-                피아노와 바이올린을 배웠고, 다섯살 때 이미 작곡을 하기 시작했으며, 1764년에서 
-                1765년 사이에 바흐로부터 처음으로 교향곡을 작곡하는 법을 배웠는데 이것이 
-                모차르트가 수많은 교향곡을 남기는 계기가 되었다. 모차르트는 빈에서 
-                1784년에 14세인 베토벤을 만나 베토벤을 교육시키는데 전념하기도 했다.
-            </p>
+        <header>
+            <h3>About me</h3>
+            <hr>
+            <p>안녕하세요? 제 이름은 홍길동입니다. 올해 대학교를 입학한 새내기입니다.<br>
+            다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요 ~</p>
+        </header>
+        
+        <nav id="navigation">
+            <h3>목차</h3>
+            <ul>
+                <li><a href="#interests">관심분야</a></li>
+                <li><a href="#hobbies">취미활동</a></li>
+                <li><a href="#timetable">강의시간표</a></li>
+            </ul>
+        </nav>
+        
+        <article id="interests">
+            <h3>관심 분야</h3>
+            <hr>
+            <ul>
+                <li>인공지능(AI)
+                    <ul>
+                        <li>머신러닝(Machine Learning)</li>
+                        <li>자연어 처리(Natural Language Processing, NLP)</li>
+                        <li>컴퓨터 비전(Computer Vision)</li>
+                        <li>로보틱스(Robotics)</li><br>
+                    </ul>
+                </li>
+                <li>사물인터넷(IoT)
+                    <ul>
+                        <li>사물(Things): 센서, 액추에이터 등 통신 기능을 갖춘 다양한 기기</li>
+                        <li>센서(Sensors): 온도, 습도, 빛, 움직임 등 환경 정보를 감지하는 장치</li>
+                        <li>네트워크(Network): 사물과 인터넷을 연결하는 통신망 (Wi-Fi, Bluetooth, 5G 등)</li>
+                        <li>플랫폼(Platform): 수집된 데이터를 저장, 분석, 처리하는 소프트웨어 시스템</li><br>
+                    </ul>
+                </li>
+                <li>양자컴퓨터
+                    <ul>
+                        <li>큐비트 (Qubit)</li>
+                        <li>중첩 (Superposition)</li>
+                        <li>얽힘 (Entanglement)</li><br><br>
+                    </ul>
+                </li>
+            </ul>
         </article>
+        
+        <article id="hobbies">
+            <h3>취미 활동</h3>
+            <hr>
+            <table border="1">
+                <tr>
+                    <thead>
+                        <td><img src="media/ridding.jpg" width="200" alt="ridding"></td>
+                        <td><img src="media/running.jpg" width="200" alt="running"></td>
+                        <td><img src="media/reading.jpg" width="200" alt="reading"></td>
+                    </thead>
+                </tr>
 
-        <article id="death">
-            <h2>죽음</h2>
-            <p>
-                모차르트는 1791년 12월 5일 오전 0시 55분경에 갑자기 병으로 죽었으며 
-                모차르트가 완성하지 못한 작품 레퀴엠은 프란츠 크사버 쥐스마이어(Franz Xaver Sussmayr)가 완성시켰다.
-            </p>
+                <tfoot>
+                    <tr>
+                        <th>ridding</th>
+                        <th>running</th>
+                        <th>reading</th>
+                    </tr>
+                </tfoot>
+            </table>
         </article>
-
-        <article id="music">
-            <h2>음악</h2>
-            <p>
-                오페라, 교향곡, 행진곡, 관현악용 무곡, 피아노 협주곡, 바이올린 협주곡, 
-                교회용 성악곡, 칸타타, 미사곡 등 다양한 장르를 아우르며 600 여곡을 작곡하여 후대에 남겼다.
-            </p>
+        
+        <article id="timetable">
+            <h3>강의 시간표(2025년 1학기)</h3>
+            <hr>
+            <table border="1" style="width:500px; text-align:center;">
+                <thead>
+                    <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>09</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="3">인터넷 콘텐츠<br>(101반)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr><td>11</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>12</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>13</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr>
+                        <td>14</td><td></td><td>
+                        <td rowspan="3">인터넷 콘텐츠<br>(102반)</td>
+                        </td><td></td><td></td>
+                    </tr>
+                    <tr><td>15</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>16</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>17</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
         </article>
+        <br>
+        <footer>
+            <a href="survey3.html">설문조사</a>
+            <p>Copyright 2026 by MYONGJI COLLEGE</p>
+        </footer>
     </section>
-
-    <aside id="legend">
-        <h3>모차르트의 죽음에 얽힌 전설</h3>
-        <p>
-            모차르트의 장례식 날 비가 오고 천둥이 쳤다고 하나 New Groove에 따르면 
-            사실은 구름 한 점 없는 쾌청한 날이었다고 한다.
-        </p>
-    </aside>
-
-    <footer>
-        <p>2017년 10월 7일 작성, 위키피디어 참고</p>
-    </footer>
-
 </body>
 </html>

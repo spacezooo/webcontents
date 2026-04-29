@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html>
+<head>
     <meta charset="UTF-8">
     <title>설문지</title>
-    <head>
-        <body>
-            <h1>설문지</h1>
-            소프트웨어 기술에대한 의견을 듣고싶습니다<br>
-            <hr>
-            <form>
+</head>
+<body>
+    <header>
+        <h1>설문지</h1>
+        <p>소프트웨어 기술에 대한 의견을 듣고 싶습니다. 많은 참여 부탁드립니다.</p>
+    </header>
+    <hr>
+    
+    <section>
+        <form>
+            <article>
                 학년
-                <label>
-                <input type="radio" name"123" value="1">1학년
-                </label>
-                <label>
-                <input type="radio" name"123" value="2">2학년
-                </label>
-                <label>
-                <input type="radio" name"123" value="3">3학년
-                </label>
-                <br>
+                <label><input type="radio" name="grade" value="1">1학년</label>
+                <label><input type="radio" name="grade" value="2">2학년</label>
+                <label><input type="radio" name="grade" value="3">3학년</label>
+            </article>
+            <br>
 
+            <article>
                 성별
-                <label>
-                <input type="radio" name"1234" value="남">남
-                </label>
-                <label>
-                <input type="radio" name"1234" value="여">여
-                </label>
-                <br>
+                <label><input type="radio" name="gender" value="남">남</label>
+                <label><input type="radio" name="gender" value="여">여</label>
+            </article>
+            <br>
 
+            <article>
                 관심분야
-                <select size="" name="china">
-                    <option value="1">소</option>
-                    <option value="2">프</option>
-                    <option value="3">트</option>
-                    <option value="4">웨</option>
+                <select name="interest">
+                    <option value="1">소프트웨어</option>
+                    <option value="2">데이터</option>
+                    <option value="3">인공지능</option>
+                    <option value="4">딥러닝</option>
                 </select>
-                <br>
+            </article>
+            <br>
 
+            <article>
                 진로
-                <input type="checkbox" value="">개발
-                <input type="checkbox" value="">기획
-                <input type="checkbox" value="">영업
-                <input type="checkbox" value="">창업
+                <input type="checkbox" name="job" value="11">개발
+                <input type="checkbox" name="job" value="22">기획
+                <input type="checkbox" name="job" value="33">영업
+                <input type="checkbox" name="job" value="44">창업
+            </article>
+            <br>
 
-                남기고 싶은말
-                <fieldset>
-                    글을 남겨주세요
-                </fieldset>
+            <article>
+                남기고 싶은 말:
+                <textarea cols="30" rows="5">글을 남겨주세요</textarea>
+            </article>
 
-                <br>
-                <h4>sdfsfdadsfafsda</h4>
+        </form>
+    </section>
 
-            </form>
-        </body>
-    </head>
+    <footer>
+        <p>Copyright 2026 by MYONGJI COLLEGE</p>
+    </footer>
+</body>
 </html>
